@@ -31,7 +31,7 @@ public class UserService {
         return userDao.getUsers();
     }
 
-    public User userSignIn(String username, String password) throws UserException {
+    public User getLoggedInUser(String username, String password) throws UserException {
         if (!userDao.containsUsernameAndPassword(username,password)){
             throw new InputDataUserException("Wrong username or password.\n" +
                     "Please enter both of your password and username correctly.");
