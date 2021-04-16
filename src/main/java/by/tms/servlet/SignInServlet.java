@@ -22,7 +22,7 @@ public class SignInServlet extends HttpServlet {
 
         try {
             if (req.getSession().getAttribute("user") == null){
-                User userInSession = userService.userSignIn(username,password);
+                User userInSession = userService.getLoggedInUser(username,password);
                 resp.getWriter().printf("User:%s - you are logged in system.", username);
                 req.getSession().setAttribute("user", userInSession);
             }else {
