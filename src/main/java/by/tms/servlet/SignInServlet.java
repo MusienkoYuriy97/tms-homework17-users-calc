@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-
 @WebServlet(urlPatterns = "/signIn")
 public class SignInServlet extends HttpServlet {
     private UserService userService = new UserService();

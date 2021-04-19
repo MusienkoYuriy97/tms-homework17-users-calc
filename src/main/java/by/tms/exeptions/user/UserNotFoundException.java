@@ -1,7 +1,5 @@
 package by.tms.exeptions.user;
 
-import by.tms.exeptions.user.UserException;
-
 public class UserNotFoundException extends UserException {
     public UserNotFoundException() {
     }

@@ -11,7 +11,6 @@ public class CalcDaoImp implements CalcDao {
         return operations;
     }
 
-
     public void saveOperation(Operation operation) {
         operations.add(operation);
     }
